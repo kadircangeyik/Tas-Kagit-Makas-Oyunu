@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="cs-game">
+        <!-- Skor Ekranı -->
+        <div class="cs-score">
+            <div class="cs-score-1">Score: <span>0</span></div>
+            <div class="cs-spacer"></div>
+            <div class="cs-score-2">Score: <span>0</span></div>
+        </div>
+        <!-- Kazan/Kaybet Ekranı -->
+        <div class="cs-win-lose win">
+            <p>You Win!</p>
+            <div><button class="cs-play-btn">Play Again!</button></div>
+        </div>
+        <div class="cs-game-board">
+            <!-- Pc Bölümü -->
+            <div class="cs-computer">
+                <div class="cs-game-number">1 / 10</div>
+                <div>
+                    <div class="cs-player-1" data-choice="2"><span>ME</span></div>
+                    <div class="cs-spacer"></div>
+                    <div class="cs-player-2" data-choice="2"><span>PC</span></div>
+                </div>
+            </div>
+            <!-- Oyuncu Bölümü -->
+            <div class="cs-player">
+                <div>
+                    <!-- Taş Butonu -->
+                    <button class="cs-hand" data-hand="0" data-image="🤛">
+                        <span class="hidden">taş</span>
+                    </button>
+
+                    <!-- Kağıt Butonu -->
+                    <button class="cs-hand" data-hand="1" data-image="✋">
+                        <span class="hidden">kağıt</span>
+                    </button>
+
+                    <!-- Makas Butonu -->
+                    <button class="cs-hand" data-hand="2" data-image="✌">
+                        <span class="hidden">makas</span>
+                    </button>
+
+                    <!-- Kertenkele Butonu -->
+                    <button class="cs-hand" data-hand="3" data-image="🦎">
+                        <span class="hidden">kertenkele</span>
+                    </button>
+
+                    <!-- El Butonu -->
+                    <button class="cs-hand" data-hand="4" data-image="🖖">
+                        <span class="hidden">el</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
